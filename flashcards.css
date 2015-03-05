@@ -1,0 +1,440 @@
+/*
+colors inspired from http://typespiration.com/types/bold/
+*/
+
+/* my red BF0215 #C41616*/
+@font-face {
+		font-family: "opensans";
+		src:url("chrome-extension://__MSG_@@extension_id__/fonts/AlexBrush-Regular.ttf") format(truetype);
+	}
+@font-face{
+	font-family: "sansabolditalic";
+	src:url("chrome-extension://__MSG_@@extension_id__/fonts/Sansation-BoldItalic.ttf") format(truetype);	
+}
+@font-face{
+	font-family: "sansareg";
+	src:url("chrome-extension://__MSG_@@extension_id__/fonts/Sansation-Regular.ttf") format(truetype);	
+}
+@font-face{
+	font-family: "sansaitalic";
+	src:url("chrome-extension://__MSG_@@extension_id__/fonts/Sansation-Italic.ttf") format(truetype);	
+}
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-input-placeholder {
+   color: #C0C0C0 ;
+}
+ 
+::-webkit-scrollbar-track {
+    border-radius: 2px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #C41616; 
+}
+body
+{
+	background-color: #F5EDEE;
+	width: 100%;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	border:0px;
+}
+div
+{
+	box-sizing:border-box;
+
+}
+#main
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	display: block;
+}
+#modal
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+	width: 100%;
+	z-index: 100;
+	min-height: 600px;
+	background-color: #F5EDEE;
+}
+#modalright,#modalleft
+{
+	display: inline-block;
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+	box-sizing:border-box;
+	padding: 5px;
+}
+#searchbarwrapper
+{
+	height: 40px;
+	text-align: center;
+}
+#searchbar
+{
+	width: 200px;
+	border:0px;
+	background-color: transparent;
+	border-bottom: 2px dashed #C41616;
+	font-size: 25px;
+	font-family: "sansareg";
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+
+}
+#searchbar:focus
+{
+	outline:none;
+}
+#searchresultswrapper
+{
+	width: 100%;
+	height: 400px;
+	padding: 10px;
+	overflow:auto;
+}
+
+.searchresults
+{
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 50px;
+	font-size: 18px;
+	font-family: "sansaitalic";
+	color: #000;
+	text-align: center;
+	-webkit-transition:all 0.2s;
+}
+.searchresults:hover
+{
+	-webkit-transform:scale3d(1.1,1.1,1.1);
+	-webkit-animation-fill-mode: forwards;
+	cursor: pointer;
+	color: #C41616;
+}
+#bodycontainer
+{
+	width: 100%;
+	position: absolute;
+	
+}
+.menu
+{
+	display: block;
+	width: 50px;
+	height: 50px;
+	
+}
+.circle
+{
+	display: block;
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	background-color: white;
+	border:2px solid #F5EDEE;
+	box-sizing: border-box;
+	padding-top: 5px;
+	padding-left: 4px;
+
+}
+#messageforclick
+{
+	height: 40px;
+	text-align: center;
+	font-family: "sansaitalic";
+	font-size: 14px;
+	color: #C41616;
+	padding: 10px;
+	display: block;
+
+}
+#wordexpand
+{
+	width: 100%;
+	height: 400px;
+	padding: 10px;
+	overflow: auto;
+	display: none;
+}
+#ingest
+{
+	width: 100%;
+	height: 400px;
+	overflow: auto;
+	display: none;
+}
+.circle:hover
+{
+	cursor: pointer;
+	border:2px solid #C41616;
+}
+.dwa
+{
+	font-family: "opensans";
+	font-size:20px;
+	color: #685206;
+}
+#center
+{
+	width: 60%;
+	margin-left: 20%;
+	height: 375px;
+	max-height: 375px;
+	margin-top: 50px;
+	
+	
+}
+#word,#weword
+{
+	width: 100%;
+	height: 30px;
+	font-family: "sansareg";
+	font-size: 30px;
+	text-align: center;
+	color: #C41616;
+}
+
+
+
+{
+	width: 100%;
+	font-family: "sansareg";
+	font-size: 20px;
+	color: #111;
+	margin-top: 10px;
+}
+#resultwrapper
+{
+	width: 100%;
+	height: 330px;
+	max-height: 330px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+#results
+{
+	width: 100%;
+	min-height: 
+}
+#footer
+{
+	position: fixed;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	background-color: #F5EDEE;
+	z-index: 1000;
+}
+#titl
+{
+	position: absolute;
+	bottom: 30px;
+	font-family: "sansabolditalic";
+	font-size: 40px;
+	margin-left: 25px;
+	color: #C41616;
+
+}
+#addword
+{
+	width: 70px;
+	font-family: "sansareg";
+	font-size: 20px;
+	color: #C0C0C0 ;
+}
+#addword:hover
+{
+	color:#C41616;
+	cursor: pointer;
+}
+#deleteword,#deletetooltip
+{
+	display: none;
+	color: #C0C0C0;
+	font-size: 30px;
+	font-family: "sansareg"; 
+	height:30px;
+	line-height: 30px;
+	margin-left: 10px;
+
+}
+#deletetooltip
+{
+	visibility: hidden;
+
+}
+#wewordvalue
+{
+	display: inline-block;
+	height: 30px;
+}
+#deleteword:hover
+{
+	color: #C41616;
+	cursor: pointer;
+}
+#ingest
+{
+	width: 100%;
+}
+.ingestposwrapper input,#addingword
+{
+	width: 80%;
+	height: 30px;
+	margin: 10px;
+	border: 0px;
+	border-bottom: 1px solid #C0C0C0;
+	background-color: transparent;
+	outline: none;
+	font-size: 25px;
+	font-family: "sansareg";
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+}
+.addbuttons,.removebuttons,#addwordform
+{
+	font-size: 25px;
+	font-weight: bold;
+	font-family: "sansareg";
+	margin-left: 10px;
+	color: #C0C0C0;
+
+}
+#addwordform
+{
+	
+	font-size: 20px;
+}
+.addbuttons:hover,.removebuttons:hover,#addwordform:hover
+{
+	cursor: pointer;
+	color: #C41616;
+}
+#addingword
+{
+	font-size: 30px;
+}
+.seperator
+{
+	display: inline-block;
+	width: 5px;
+	height: 20px;
+	background-color: #C41616;
+	-webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+.posvalue
+{
+	width: 100%;
+	font-family: "sansareg";
+	font-size: 25px;
+	color: #111;
+	margin-top: 10px;
+}
+.meaning,.usage,.synonyms
+{
+	margin-top: 5px;
+	width: 100%;
+	font-family: "sansareg";
+	font-size: 20px;
+	color: #111;
+
+}
+.usage{
+	padding-left: 40px;
+	font-size: 18px;
+}
+.synonyms
+{
+	padding-left: 40px;
+}
+.bullet
+{
+	display: inline-block;
+	width: 5px;
+	height: 12px;
+	-webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+	background: #C41616;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+.dash
+{
+	display: inline-block;
+	width: 4px;
+	height: 12px;
+	-webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+	background: #C41616;
+	vertical-align: middle;
+}
+.subs
+{
+	font-family: "sansaitalic";
+	font-size: 18px;
+	margin-right: 2px;
+}
+.welcome
+{
+	font-family: "sansareg";
+	font-size: 14px;
+	color: #000;
+}
+#instruction
+{
+	font-family: "sansaitalic";
+	font-size: 12px;
+	color: #C41616;
+}
+#straight
+{
+	font-family: "sansareg";
+	font-size: 15px;
+	color: #000;
+}
+.menubar
+{
+	width: 100%;
+	height: 50px;
+	margin: 10px;
+}
+
+#memoryfull
+{
+	font-family: "sansareg";
+	font-size: 20px;
+	color: #C0C0C0;
+	position: absolute;
+	top: 0px;
+	margin-left: 25px;
+	visibility: hidden;
+}
+.sad
+{
+	display: inline-block;
+	-webkit-transform: rotate(90deg);
+	color: #C41616;
+
+}

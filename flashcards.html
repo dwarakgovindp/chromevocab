@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="flashcards.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/background.js"></script>
+	</head>
+	<body>
+		<div id="bodycontainer">
+			<div id="main">
+					<div class="menubar">
+						<span class="menu">
+							<span class="circle">
+								<span class="dash"></span>
+								<span class="dash"></span>
+								<span class="dash"></span>
+							</span>
+
+						</span>
+					</div>
+					
+
+					<div id="center">
+						<div id="word">
+							
+						</div>
+						<div id="resultwrapper">
+							<div id="results">
+								<!--
+								template
+
+								<div class="poscontainer">
+									<div class="posvalue">
+									</div>
+									<div class="poswrapper">
+										<div class="meaning">
+										</div>
+										<div class="usage">
+										</div>
+										<div class="synonyms">
+										</div>
+									</div>
+								</div>
+									
+
+								-->
+							</div>
+						</div>
+
+					</div>
+			</div>
+			<div id="modal">
+				<div class="menubar">
+					<span class="menu">
+								<span class="circle">
+									<span class="dash"></span>
+									<span class="dash"></span>
+									<span class="dash"></span>
+								</span>
+
+					</span>
+				</div>
+				<div id="modalleft">
+					<div id="searchbarwrapper">
+						<input id="searchbar" type="text" spellcheck="false" placeholder="search"/>
+						<span class="seperator"></span>
+						<span id="addword">Add</span>
+					</div>
+					<div id="searchresultswrapper">
+						
+					</div>
+					
+				</div>
+				<div id="modalright">
+					<div id="messageforclick">
+						Search and click on the word to see more or Add your words to me
+					</div>
+					<div id="wordexpand">
+						<div id="weword">
+							<span id="wewordvalue"></span><span id="deleteword">&times;</span><span id="deletetooltip">delete</span>
+						</div>
+						<div id="weresults">
+							<!-- <div class="weposvalue">
+							
+							</div>
+							<div class="weposwrapper">
+								<div class="wemeaning"> 
+
+								</div>
+								<div class="weusage">
+
+								</div>
+								<div class="wesynonyms">
+
+								</div>
+							</div> -->
+						</div>
+						
+					</div>
+					<div id="ingest">
+						<input class="addwords"  id="addingword" type="text" placeholder="word"/>
+						<span id="addwordform" >add!</span>
+						<div class="ingestposwrapper">
+							<input class="addwords addpos"  type="text" spellcheck="false" placeholder="noun or verb or adjective or adverb"/><span class="morepos addbuttons">+</span>
+							<input class="addwords addmeaning" placeholder="meaning"  type="text" spellcheck="false"/>
+							<input class="addwords addusage" placeholder="usage in sentence"  type="text" spellcheck="false"/>
+							<input class="addwords addsynonyms" placeholder="synonyms"  type="text" spellcheck="false"/>	
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+			<div id="footer">
+
+				<div id="titl">
+					chromevocab!
+				</div>
+				<div id="memoryfull">
+				My memory is almost full <span class="sad">:-(</span> Delete words  
+				</div>
+			</div>
+	</body>
+
+</html>

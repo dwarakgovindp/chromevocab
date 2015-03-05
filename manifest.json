@@ -1,0 +1,22 @@
+{
+	"manifest_version":2,
+	"name":"chromevocab",
+	"version":"0.1",
+	"author":"fool_01",
+	"background":{
+		"scripts":["js/jquery.js","js/background.js"]
+	},
+	"chrome_url_overrides":{
+		"newtab":"flashcards.html"
+	},
+	"content_scripts": [
+    {
+      "matches": ["http://www.google.com/*","https://www.google.com/*","https://www.google.co.in/*","http://www.google.co.in/*"],
+      "js": ["js/jquery.js", "js/inject.js"],
+      "run_at":"document_end"
+    }
+  	],
+  	"permissions":["storage"],
+  	"web_accessible_resources":["fonts/AlexBrush-Regular.ttf","fonts/Sansation-BoldItalic.ttf","fonts/Sansation-Regular.ttf","fonts/Sansation-Italic.ttf"]
+
+}
