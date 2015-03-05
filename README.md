@@ -1,6 +1,6 @@
 # chromevocab!
 
-chromevocab! is a small and simple chrome extension that may come in handy to people who wish to improve their vocabulary. It automatically stores the words and its meanings when your search through Google . Also you can add manually. Whenever a new tab is opened is your favourite chrome browser , you have your words getting displayed in random order so you can have a glance on them . 
+chromevocab! is a small and simple chrome extension that may come in handy to people who wish to improve their vocabulary. It automatically stores the words and its meanings when your search through Google . Also you can add manually. Whenever a new tab is opened is your favourite chrome browser , you have your words getting displayed in random order so you can have a glance on them . It favours chrome lovers and people who hate writing in excel sheets or some other organised form to have a look at words.
 
 
 > Current issue in the app and for which i am looking for a workaround is
