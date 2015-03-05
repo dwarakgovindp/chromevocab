@@ -11,13 +11,13 @@ chrome.runtime.onMessage.addListener(
       var entrysize = 1000 + JSON.stringify(request).length;
       if(availsize > entrysize)
       {
-      	console.log("all set");
+      	//console.log("all set");
       	localStorage.setItem(request.word, JSON.stringify(request));	
       	sendResponse({farewell: "goodbye"});
       }
       if(JSON.stringify(localStorage).length>(5*1000*1000));
       {
-      	console.log("1");
+      	//console.log("1");
       	$('#memoryfull').css({"visibility":"visible"});
       }
 
@@ -44,7 +44,7 @@ function removeondelete(word)
 	{
 		if($(all[i]).text()==word)
 			{
-				console.log("yup");
+				//console.log("yup");
 				$(all[i]).remove();
 				break;
 			}
@@ -52,7 +52,7 @@ function removeondelete(word)
 }
 function delchilds(id)
 {
-	console.log(id);
+	//console.log(id);
 	var rangeObj = new Range();
 	// Select all of theParent's children
 	rangeObj.selectNodeContents(document.getElementById(id));
@@ -64,12 +64,12 @@ function init()
 	var welcome = document.createElement("span");
 	welcome.className = "welcome";
 	word.appendChild(welcome);
-	$('.welcome').html("Hey! Start searching for words' meaning in Google and i will take care of them <br/> <span id=\"instruction\">Type <span id = \"straight\">&ltyour_word&gt meaning</span> in searchbox in Google page or Google search address bar so that i can get it or else if Google is not up to your vocabulary standards add your words </span>");
+	$('.welcome').html("Hey! Start searching for words' meaning in Google and i will take care of them <br/> <span id=\"instruction\">Type <span id = \"straight\">&ltyour_word&gt meaning</span> in searchbox in Google page or Google search address bar so that i can get it or else if Google's results are not up to your vocabulary standards add your words </span>");
 }
 function generate()
 {
-console.log("in generate");
-console.log(localStorage.length);
+//console.log("in generate");
+//console.log(localStorage.length);
 var ll = localStorage.length;
 if(ll==0)
 {
@@ -81,7 +81,7 @@ if(ll==0)
 	else if($('#results').children())
 	{
 		$('#word').text("");
-		console.log("yaaaaaaaaaa");
+		
 		delchilds("word");
 		delchilds("results");
 		init();
@@ -374,7 +374,7 @@ $('#deleteword').click(function(){
 	localStorage.removeItem(ww);
 	if(JSON.stringify(localStorage).length>(5*1000*1000))
 	{
-		console.log("2");
+		//console.log("2");
 		$('#memoryfull').css({"visibility":"visible"});	
 	}
 	
@@ -412,8 +412,8 @@ inn=0;
 $('#searchbar').keyup(function(){
 	var query = $.trim($('#searchbar').val());
 	//console.log(query)
-	console.log(rootnode);
-	console.log(inn++);
+	//console.log(rootnode);
+	//console.log(inn++);
 	delchilds("searchresultswrapper");
 	if(query=="")
 	{
@@ -468,15 +468,15 @@ $('#addword').click(function(){
 
 });
 $('#addwordform').click(function(){
-	console.log(rootnode);
+	//console.log(rootnode);
     var word = $('#addingword').val();
     var pos = $('.addpos');
     var meaning = $('.addmeaning');
-    console.log(pos.length);
+    //console.log(pos.length);
     for(var i=0;i<pos.length;i++)
     {
     	var vl = $.trim($(pos[i]).val());
-    	console.log(vl);
+    	//console.log(vl);
     	if(vl == "" || (vl != "noun" && vl!="verb" && vl!="adjective" && vl!="adverb"))
     	{
     		$(pos[i]).css({"border-bottom":"1px solid red"});
@@ -544,7 +544,7 @@ $('#addwordform').click(function(){
     	})
     	
     	data.results = results;
-    	console.log(data);
+    	//console.log(data);
     	//trim data 
     		for(var k=0;k<data.results.length;k++)
 			{
@@ -561,13 +561,13 @@ $('#addwordform').click(function(){
 					}
 				}
 			}
-			console.log(data);
+			//console.log(data);
 	    	//put into local storage and reset the form and update the trie and display the contents and on success hide the form and display messageforclick
     	  var availsize = (5*1024*1024) - JSON.stringify(localStorage).length;
 	      var entrysize = 1000 + JSON.stringify(data).length;
 	      if(availsize > entrysize)
 	      {
-	      	console.log("all set");
+	      	//console.log("all set");
 	      	localStorage.setItem(data.word, JSON.stringify(data));
 	      	$('#ingest input').val("");	
 	      	$('#messageforclick').css({"display":"block"});
@@ -576,7 +576,7 @@ $('#addwordform').click(function(){
 	      }
 	      if(JSON.stringify(localStorage).length>(5*1000*1000))
 	      {
-	      	console.log("3");
+	      	//console.log("3");
 	      	$('#memoryfull').css({"visibility":"visible"});
 	      }
 	      delchilds("searchresultswrapper");
