@@ -1,12 +1,4 @@
-/*
-colors inspired from http://typespiration.com/types/bold/
-*/
 
-/* my red BF0215 #C41616*/
-@font-face {
-		font-family: "opensans";
-		src:url("chrome-extension://__MSG_@@extension_id__/fonts/AlexBrush-Regular.ttf") format(truetype);
-	}
 @font-face{
 	font-family: "sansabolditalic";
 	src:url("chrome-extension://__MSG_@@extension_id__/fonts/Sansation-BoldItalic.ttf") format(truetype);	
