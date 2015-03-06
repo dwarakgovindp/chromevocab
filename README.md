@@ -4,7 +4,7 @@ chromevocab! is a small and simple chrome extension that may come in handy to pe
 
 
 > Current issue in the app and for which i am looking for a workaround is
->  the app's dependency on DOM of Google Search results (When it is changed the  app needs to be modified at places ) . Feel Free to contribute if you find any workaround. Also bare the poor documentation :P
+>  the app's dependency on DOM of Google Search results (When it is changed the  app needs to be modified at places ) . Feel Free to contribute if you find any workaround. Also i apologise for the poor documentation :P
   
 
 
