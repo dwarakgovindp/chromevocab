@@ -562,7 +562,7 @@ $('#addwordform').click(function(){
 				}
 			}
 			//console.log(data);
-	    	//put into local storage and reset the form and update the trie and display the contents and on success hide the form and display messageforclick
+	    	//put into local storage and reset the form and update the tree and display the contents and on success hide the form and display messageforclick
     	  var availsize = (5*1024*1024) - JSON.stringify(localStorage).length;
 	      var entrysize = 1000 + JSON.stringify(data).length;
 	      if(availsize > entrysize)
