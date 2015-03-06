@@ -15,9 +15,9 @@ chrome.runtime.onMessage.addListener(
       	localStorage.setItem(request.word, JSON.stringify(request));	
       	sendResponse({farewell: "goodbye"});
       }
-      if(JSON.stringify(localStorage).length>(5*1000*1000));
+      if(JSON.stringify(localStorage).length>(5*1000*1000))
       {
-      	//console.log("1");
+     
       	$('#memoryfull').css({"visibility":"visible"});
       }
 
