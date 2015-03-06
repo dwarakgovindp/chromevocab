@@ -17,7 +17,6 @@ chrome.runtime.onMessage.addListener(
       }
       if(JSON.stringify(localStorage).length>(5*1000*1000))
       {
-     
       	$('#memoryfull').css({"visibility":"visible"});
       }
 
