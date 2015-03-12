@@ -1,4 +1,4 @@
-# chromevocab!
+# chromevocab! Don't stare at blank new tab with no meaning
 
 chromevocab! is a small and simple chrome extension that may come in handy to people who wish to improve their vocabulary. It automatically stores the words and its meanings when your search through Google . Also you can add manually. Whenever a new tab is opened in your favourite chrome browser , you have your words getting displayed in random order so that you can have a glance on them . It favours people who search for words in Google and then who hate writing in excel sheets or some other organised form to have a look at words.
 
