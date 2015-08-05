@@ -28,6 +28,6 @@ chromevocab! is a small and simple chrome extension that may come in handy to pe
 
 ### Screenshots
 
-![alt tag](https://raw.github.com/dwarakgovindp/chromevocab/tree/master/screenshots/homescreen.png)
+![alt tag](https://github.com/dwarakgovindp/chromevocab/tree/master/screenshots/homescreen.png)
 
 
