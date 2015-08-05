@@ -26,4 +26,8 @@ chromevocab! is a small and simple chrome extension that may come in handy to pe
 * To delete a word , click on  x  near the word 
 * To add a word ,click on the add button near search box , then fill out the information needed that is displayed on right side and click add button on right side.
 
+### Screenshots
+
+![alt tag](https://raw.github.com/dwarakgovindp/chromevocab/tree/master/screenshots/homescreen.png)
+
 
