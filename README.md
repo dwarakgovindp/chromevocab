@@ -28,7 +28,7 @@ chromevocab! is a small and simple chrome extension that may come in handy to pe
 
 ### Screenshots
 
-## NewTab Page
+#### NewTab Page
 
 ![Screenshot](https://raw.githubusercontent.com/dwarakgovindp/chromevocab/master/screenshots/homescreen.png)
 
