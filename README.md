@@ -44,7 +44,7 @@ chromevocab! is a small and simple chrome extension that may come in handy to pe
 
 #### Chicanery in chromevocab! homescreen
 
-![Screenshot] (https://raw.githubusercontent.com/dwarakgovindp/chromevocab/master/screenshots/chicanery_in_chromevocab_homescreen.png)
+![Screenshot] (https://raw.githubusercontent.com/dwarakgovindp/chromevocab/master/screenshots/chicanery_in_ chromevocab_homescreen.png)
 
 #### Chicanery in chromevocab! list
 
